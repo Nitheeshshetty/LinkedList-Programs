@@ -16,12 +16,10 @@ class GFG {
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		while(t-- > 0){
-		    
-		    Node head1 = null, head2 = null, tail1 = null, tail2 = null;
-		    
+		    Node head1 = null, head2 = null, tail1 = null, tail2 = null;	    
 		    //Input first LL
 		    int n1 = sc.nextInt();
-            int d1 = sc.nextInt();		    
+                    int d1 = sc.nextInt();		    
 		    head1 = new Node(d1);
 		    tail1 = head1;
 		    
@@ -30,10 +28,8 @@ class GFG {
 		        tail1.next = n;
 		        tail1 = tail1.next;
 		    }
-		    
-		    //Input second LL
 		    int n2 = sc.nextInt();
-            int d2 = sc.nextInt();		    
+            	    int d2 = sc.nextInt();		    
 		    head2 = new Node(d2);
 		    tail2 = head2;
 		    
