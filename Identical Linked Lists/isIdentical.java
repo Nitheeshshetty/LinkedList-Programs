@@ -1,6 +1,3 @@
-//{ Driver Code Starts
-/*package whatever //do not write package name here */
-
 import java.io.*;
 import java.util.*;
 
@@ -68,19 +65,6 @@ class GFG {
     }
 }
 
-// } Driver Code Ends
-
-
-/*
-class Node {
-    int data;
-    Node next;
-    
-    public Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}*/
 
 class Solution {
     public boolean isIdentical (Node head1, Node head2)
