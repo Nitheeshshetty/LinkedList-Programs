@@ -1,4 +1,3 @@
-// { Driver Code Starts
 import java.util.*;
 import java.lang.*;
 
@@ -13,7 +12,6 @@ class Node
     }
 }
 
-
 class nthNode
 {
     static Node head;
@@ -25,7 +23,6 @@ class nthNode
         {
             int n = sc.nextInt();
             int k = sc.nextInt();
-            
             int a1 = sc.nextInt();
             Node head = new Node(a1);
             addToTheLast(head);
@@ -34,7 +31,6 @@ class nthNode
                 int a = sc.nextInt();
                 addToTheLast(new Node(a));
             }
-            
            GfG gfg = new GfG();
            System.out.println(gfg.getNth(head, k));
         }
@@ -55,24 +51,9 @@ class nthNode
         }
     }
 }
-// } Driver Code Ends
 
-
-/*node class of the linked list
-class Node
-{
-    int data;
-    Node next;
-    Node(int key)
-    {
-        data = key;
-        next = null;
-    }
-}
-*/
 class GfG
-{
-   
+{ 
     public static int getNth(Node node, int ind)
     {
        if(ind==1){
