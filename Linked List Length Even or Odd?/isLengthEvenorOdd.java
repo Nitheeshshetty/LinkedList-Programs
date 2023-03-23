@@ -51,16 +51,16 @@ public class GFG2
 
 class GFG
 {
-	int isLengthEvenorOdd(Node head1)
-	{
-	    int count=1;
-	    while(head1!=null){
-	        count++;
-	        head1=head1.next;
-	    }
-	    if(count % 2 == 0)
-	        return 1;
-	    else
-	        return 0;
-	}
+     int isLengthEvenorOdd(Node head1)
+     {
+	 int count=1;
+	 while(head1!=null){
+	     count++;
+	     head1=head1.next;
+	 }
+	 if(count % 2 == 0)
+	     return 1;
+	 else
+	     return 0;
+     }
 }
