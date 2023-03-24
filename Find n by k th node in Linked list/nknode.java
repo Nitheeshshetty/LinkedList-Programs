@@ -1,4 +1,3 @@
-// { Driver Code Starts
 import java.util.*;
 
 class Node
@@ -16,7 +15,6 @@ class Node
 class LinkedList
 {
     static Node head;
-    
      public static void addToTheLast(Node node) 
 	{
 		if (head == null) 
@@ -51,7 +49,7 @@ class LinkedList
 			System.out.println(gfg.nknode(head, k));
 		     }
 		 }
-}// } Driver Code Ends
+}
 
 
 /*
