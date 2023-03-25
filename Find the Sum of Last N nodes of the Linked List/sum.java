@@ -18,15 +18,12 @@ class GFG {
 		while(t-- > 0){
 		    int n = sc.nextInt();
 		    int k = sc.nextInt();
-		    
 		    Node head = new Node(sc.nextInt());
 		    Node tail = head;
-		    
 		    for(int i=1; i<n; i++){
 		        tail.next = new Node(sc.nextInt());
 		        tail = tail.next;
 		    }
-		    
 		    Solution obj = new Solution();
 		    System.out.println(obj.sum(head, k));
 		}
