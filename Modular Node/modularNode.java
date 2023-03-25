@@ -51,9 +51,6 @@ class Modular
 }
 
 
-// Your task is to complete the function
-// function should return the modular Node
-// if no such node is present then return -1
 class GfG
 {
     public static int moduarNode(Node head, int k)
