@@ -60,7 +60,6 @@ class Remove_Duplicate_From_LL
 
 
 
-
 class GfG
 {
     //Function to remove duplicates from sorted linked list.
