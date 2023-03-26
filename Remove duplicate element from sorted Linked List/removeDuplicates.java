@@ -59,14 +59,7 @@ class Remove_Duplicate_From_LL
 }
 
 
-/*
-class Node
-    {
-        int data;
-        Node next;
-        Node(int d) {data = d; next = null; }
-    }
-*/
+
 
 class GfG
 {
