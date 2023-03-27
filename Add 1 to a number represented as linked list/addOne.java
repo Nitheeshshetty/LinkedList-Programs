@@ -73,7 +73,6 @@ class Solution
             ans=newNode;
             return ans;
         }
-        
         Node ans=reverse(rev);
         return ans;
     }
