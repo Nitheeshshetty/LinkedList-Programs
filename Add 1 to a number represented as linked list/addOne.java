@@ -64,8 +64,7 @@ class Solution
             }
             
             tempRev=tempRev.next;
-        }
-        
+        } 
         if(carry==1){
             Node newNode=new Node(1);
             Node ans=reverse(rev);;
