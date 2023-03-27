@@ -23,14 +23,14 @@ class GfG
         System.out.println();
     } 
     public static void main(String args[])throws IOException
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t-->0)
         {
-            Scanner sc = new Scanner(System.in);
-            int t = sc.nextInt();
-            while(t-->0)
-                {
-                    String s = sc.next();
-                    Node head = new Node( s.charAt(0) - '0' );
-                    Node tail = head;
+            String s = sc.next();
+            Node head = new Node( s.charAt(0) - '0' );
+            Node tail = head;
                     for(int i=1; i<s.length(); i++)
                     {
                         tail.next = new Node( s.charAt(i) - '0' );
