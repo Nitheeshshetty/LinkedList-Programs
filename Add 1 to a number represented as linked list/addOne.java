@@ -31,16 +31,16 @@ class GfG
             String s = sc.next();
             Node head = new Node( s.charAt(0) - '0' );
             Node tail = head;
-                    for(int i=1; i<s.length(); i++)
-                    {
-                        tail.next = new Node( s.charAt(i) - '0' );
-                        tail = tail.next;
-                    }
-                    Solution obj = new Solution();
-                    head = obj.addOne(head);
-                    printList(head); 
-                }
+            for(int i=1; i<s.length(); i++)
+            {
+                tail.next = new Node( s.charAt(i) - '0' );
+                tail = tail.next;
+            }
+            Solution obj = new Solution();
+            head = obj.addOne(head);
+            printList(head); 
         }
+    }
 }
 
 
