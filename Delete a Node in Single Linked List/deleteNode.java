@@ -13,8 +13,8 @@ class Node
 
 class DeleteNode
 {
-	Node head;
-	void printList(Node head)
+    Node head;
+    void printList(Node head)
     {
         Node temp = head;
         while (temp != null)
@@ -24,19 +24,21 @@ class DeleteNode
         }  
         System.out.println();
     }
-	public void addToTheLast(Node node) 
+    public void addToTheLast(Node node) 
+    {
+	if (head == null) 
 	{
-		if (head == null) 
-		{
-			head = node;
-		} else 
-		{
-		   Node temp = head;
-		   while (temp.next != null)
-		   temp = temp.next;
-
-		   temp.next = node;
-		}}
+	    head = node;
+	}
+	else 
+	{
+	    Node temp = head;
+	    while (temp.next != null)
+		temp = temp.next;
+	    temp.next = node;
+	}
+    }
+	
 	public static void main(String args[])
     {
        
