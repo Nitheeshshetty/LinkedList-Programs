@@ -1,4 +1,3 @@
-//{ Driver Code Starts
 import java.util.*;
 class Node
 {
@@ -11,6 +10,7 @@ class Node
 		next = null;
 	}
 }
+
 class DeleteNode
 {
 	Node head;
