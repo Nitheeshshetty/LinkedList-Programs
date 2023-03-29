@@ -1,4 +1,3 @@
-//{ Driver Code Starts
 import java.util.*;
 
 class Node
@@ -14,16 +13,8 @@ class Node
 
 public class circular_LinkedList
 {
-    Node head, head1, head2;  // head of lisl
-	//Node last = null;
-	Node last = null;
-  
-    /* Linked list Node*/
-   
-                    
-    /* Utility functions */
- 
-    /* Inserts a new Node at front of the list. */
+    Node head, head1, head2;
+    Node last = null;
      public void addToTheLast(Node node) 
 	 {
 		
