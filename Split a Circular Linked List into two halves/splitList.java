@@ -56,15 +56,11 @@ public class circular_LinkedList
 	
     public static void main(String args[])
     {
-       
-         
-        /* Constructed Linked List is 1->2->3->4->5->6->
-           7->8->8->9->null */
-         Scanner sc = new Scanner(System.in);
-		 int t=sc.nextInt();
-		 while(t>0)
-         {
-			int n = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+	int t=sc.nextInt();
+	while(t>0)
+        {
+	int n = sc.nextInt();
 			circular_LinkedList llist = new circular_LinkedList();
 			int a1=sc.nextInt();
 			Node head= new Node(a1);
