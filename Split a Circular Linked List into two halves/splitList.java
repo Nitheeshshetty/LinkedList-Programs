@@ -15,23 +15,21 @@ public class circular_LinkedList
 {
     Node head, head1, head2;
     Node last = null;
-     public void addToTheLast(Node node) 
-	 {
-		
-		  if (head == null) 
-		  {
-			head = node;
-			
-		  } else 
-		  {
-			   Node temp = head;
-			   while (temp.next != null)
-			   temp = temp.next;
-
-		       temp.next = node;
-		  }
+    public void addToTheLast(Node node) 
+    {	
+	if (head == null) 
+	{
+	    head = node;		  
+	} 
+	else 
+	{
+	    Node temp = head;
+	    while (temp.next != null)
+		temp = temp.next;
+	    temp.next = node;
 	 }
-  /* Function to print linked list */
+    }
+
     void printList(Node node)
     {
         Node temp = node;
