@@ -35,26 +35,25 @@ public class circular_LinkedList
         Node temp = node;
         if(node != null)
         {
-			do{
-           System.out.print(temp.data+" ");
-           temp = temp.next;
-			}while (temp != node);
+	    do
+	    {
+           	System.out.print(temp.data+" ");
+           	temp = temp.next;
+	    }
+	    while (temp != node);
         }  
         System.out.println();
     }
 	
-	void circular()
-	{
-		    last = head;
-			while (last.next != null)
-				last = last.next;
-			last.next = head;
-			//System.out.println(last);
-	}
+    void circular()
+    {
+	last = head;
+	while (last.next != null)
+	    last = last.next;
+	last.next = head;
+	//System.out.println(last);
+    }
 	
-	 
- 
-     /* Drier program to test above functions */
     public static void main(String args[])
     {
        
