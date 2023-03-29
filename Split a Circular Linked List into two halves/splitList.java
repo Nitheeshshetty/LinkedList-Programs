@@ -60,48 +60,29 @@ public class circular_LinkedList
 	int t=sc.nextInt();
 	while(t>0)
         {
-	int n = sc.nextInt();
-			circular_LinkedList llist = new circular_LinkedList();
-			int a1=sc.nextInt();
-			Node head= new Node(a1);
+	    int n = sc.nextInt();
+	    circular_LinkedList llist = new circular_LinkedList();
+	    int a1=sc.nextInt();
+	    Node head= new Node(a1);
             llist.addToTheLast(head);
             for (int i = 1; i < n; i++) 
-			{
-            int a = sc.nextInt(); 
-            llist.addToTheLast(new Node(a));
-			
-			
-		     }
-			 /*Node x = head;
-			 while(x!=null)
-			 {
-				 System.out.print(x.data+" ");
-				 x = x.next;
-			 }*/
-			llist.circular();
-          //int k=sc.nextInt();
-         gfg g = new gfg();
-         llist.head1=null;
-         llist.head2=null;
-		 g.splitList(llist);
-		 llist.printList(llist.head1);
-		 llist.printList(llist.head2);
-		
-		
-        t--;
+	    {
+            	int a = sc.nextInt(); 
+            	llist.addToTheLast(new Node(a));	
+	    }
+	    llist.circular();
+            //int k=sc.nextInt();
+            gfg g = new gfg();
+            llist.head1=null;
+            llist.head2=null;
+	    g.splitList(llist);
+	    llist.printList(llist.head1);
+            llist.printList(llist.head2);
+            t--;
+    	}
     }
 }
-}
-// } Driver Code Ends
 
-
-/* Node of a linked list
- class Node {
-   int data;
-    Node next;
-    Node(int d)  { data = d;  next = null; }
-}
-*/
 
 class gfg
 {
