@@ -63,22 +63,21 @@ class GfG
 
 class Sol
 {
-	public static Node findUnion(Node head1,Node head2)
+    public static Node findUnion(Node head1,Node head2)
+    {
+	HashSet<Integer> s=new HashSet<>();
+	Node h=head1;
+	while(h!=null)
 	{
-	    HashSet<Integer> s=new HashSet<>();
-	    Node h=head1;
-	    while(h!=null)
-	    {
-	        s.add(h.data);
-	        h=h.next;
-	    }
-	    
-	    h=head2;
-	    while(h!=null)
-	    {
-	        s.add(h.data);
-	        h=h.next;
-	    }
+	    s.add(h.data);
+	    h=h.next;
+	}    
+	h=head2;
+	while(h!=null)
+	{
+	    s.add(h.data);
+	    h=h.next;
+	}
 	    Node head=null;
 	    Node last=null;
 	    for(Integer i:s)
