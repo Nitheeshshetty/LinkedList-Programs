@@ -78,22 +78,22 @@ class Sol
 	    s.add(h.data);
 	    h=h.next;
 	}
-	    Node head=null;
-	    Node last=null;
-	    for(Integer i:s)
+	Node head=null;
+	Node last=null;
+	for(Integer i:s)
+	{
+	    Node temp=new Node(i);
+	    if(head==null)
 	    {
-	        Node temp=new Node(i);
-	        if(head==null)
-	        {
-	            head=temp;
-	            last=head;
-	        }
-	        else
-	        {
-	            last.next=temp;
-	            last=last.next;
-	        }
+	        head=temp;
+	        last=head;
 	    }
+	    else
+	    {
+	        last.next=temp;
+	        last=last.next;
+	    }
+	}
 	    
 	    return head;
 	}
