@@ -93,8 +93,7 @@ class Sol
 	        last.next=temp;
 	        last=last.next;
 	    }
-	}
-	    
-	    return head;
-	}
+	}	    
+	return head;
+    }
 }
