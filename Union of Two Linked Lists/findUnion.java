@@ -47,21 +47,17 @@ class GfG
         while(t-->0)
         {
             int n , m;
-            
             n = sc.nextInt();
             Node head1 = inputList(n);
-            
             m = sc.nextInt();
             Node head2 = inputList(m);
-            
             Sol obj = new Sol();
-            
             printList(obj.findUnion(head1, head2));
             System.out.println();
         }
     }
 }
-// } Driver Code Ends
+
 
 
 /*
