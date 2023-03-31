@@ -28,12 +28,8 @@ class LinkedList_Compare
 	}
     }
  
-	 public static void main(String args[])
+    public static void main(String args[])
     {
-       
-         
-        /* Constructed Linked List is 1->2->3->4->5->6->
-           7->8->8->9->null */
          Scanner sc = new Scanner(System.in);
 		 int t=sc.nextInt();
 		 
