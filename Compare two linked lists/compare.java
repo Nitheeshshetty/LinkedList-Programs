@@ -64,19 +64,6 @@ class LinkedList_Compare
 }
 
 
-/*  Structure of Node
-class Node
- {
-    char data;
-    Node next;
- 
-    // Constructor to create a new node
-    Node(char d) 
-    {
-       data = d;
-       next = null;
-    }
- }*/
 
 class GfG
 {
