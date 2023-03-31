@@ -41,35 +41,27 @@ class LinkedList_Compare
 	    char a1=sc.next().charAt(0);
 	    Node head1= new Node(a1);
 	    llist1.addToTheLast(head1);					
-							for (int i = 1; i < n1; i++) 
-							{
-									char a = sc.next().charAt(0); 
-									llist1.addToTheLast(new Node(a));
-								 
-							}
-			    
-			
-				int n2 = sc.nextInt();
-						char b1=sc.next().charAt(0);
-						Node head2 = new Node(b1);
-						llist2.addToTheLast(head2);
-						 
-						for (int i = 1; i < n2; i++) 
-						{
-							//int b;
-							
-							 char b = sc.next().charAt(0); 
-							llist2.addToTheLast(new Node(b));
-						}
- 
-        //int value=0;
-        GfG g = new GfG();
-        value = g.compare(llist1.head, llist2.head);
-        System.out.println(value);
-	t--;
+	    for (int i = 1; i < n1; i++) 
+	    {
+		char a = sc.next().charAt(0); 
+		llist1.addToTheLast(new Node(a));								 
+	    }	
+	    int n2 = sc.nextInt();
+	    char b1=sc.next().charAt(0);
+	    Node head2 = new Node(b1);
+            llist2.addToTheLast(head2);	 
+	    for (int i = 1; i < n2; i++) 
+	    {
+		char b = sc.next().charAt(0); 
+		llist2.addToTheLast(new Node(b));
+	    }
+            GfG g = new GfG();
+            value = g.compare(llist1.head, llist2.head);
+            System.out.println(value);
+	    t--;
+        }  
     }
-    
-}}// } Driver Code Ends
+}
 
 
 /*  Structure of Node
