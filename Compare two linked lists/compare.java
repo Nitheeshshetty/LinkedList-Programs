@@ -30,21 +30,17 @@ class LinkedList_Compare
  
     public static void main(String args[])
     {
-         Scanner sc = new Scanner(System.in);
-		 int t=sc.nextInt();
-		 
-		 while(t>0)
-         {
-			 LinkedList_Compare llist1 = new LinkedList_Compare();
-			 LinkedList_Compare llist2 = new LinkedList_Compare();
-			int n1 = sc.nextInt();
-			
-			int value = 0;
-			
-					char a1=sc.next().charAt(0);
-							Node head1= new Node(a1);
-							llist1.addToTheLast(head1);
-							
+       	Scanner sc = new Scanner(System.in);
+	int t=sc.nextInt();	 
+	while(t>0)
+        {
+	    LinkedList_Compare llist1 = new LinkedList_Compare();
+	    LinkedList_Compare llist2 = new LinkedList_Compare();
+	    int n1 = sc.nextInt();	
+	    int value = 0;	
+	    char a1=sc.next().charAt(0);
+	    Node head1= new Node(a1);
+	    llist1.addToTheLast(head1);					
 							for (int i = 1; i < n1; i++) 
 							{
 									char a = sc.next().charAt(0); 
