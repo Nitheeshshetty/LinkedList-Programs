@@ -1,16 +1,14 @@
-// { Driver Code Starts
 import java.util.*;
 class Node {
-        char data;
-        Node next;
+    char data;
+    Node next;
  
-        // Constructor to create a new node
-        Node(char d) 
-        {
-            data = d;
-            next = null;
-        }
+    Node(char d) 
+    {
+        data = d;
+        next = null;
     }
+}
   class LinkedList_Compare
    {
     Node head;
