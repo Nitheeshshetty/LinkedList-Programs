@@ -9,24 +9,24 @@ class Node {
         next = null;
     }
 }
-  class LinkedList_Compare
-   {
-    Node head;
-	
-	public void addToTheLast(Node node)
-	{
-		if (head == null) 
-		{
-		   head = node;
-		} else 
-		{
-		   Node temp = head;
-		   while (temp.next != null)
-			temp = temp.next;
 
-		   temp.next = node;
-		}
+class LinkedList_Compare
+{
+    Node head;	
+    public void addToTheLast(Node node)
+    {
+	if (head == null) 
+	{
+	    head = node;
 	}
+	else 
+	{
+	    Node temp = head;
+	    while (temp.next != null)
+		temp = temp.next;
+	    temp.next = node;
+	}
+    }
  
 	 public static void main(String args[])
     {
