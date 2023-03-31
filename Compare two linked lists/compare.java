@@ -72,18 +72,22 @@ class GfG
         Node temp1=node1;
         Node temp2=node2;
         int cnt1=0,cnt2=0;
-        while(temp1!=null){
+        while(temp1!=null)
+	{
             cnt1++;
             temp1=temp1.next;
         }
-        while(temp2!=null){
+        while(temp2!=null)
+	{
             cnt2++;
             temp2=temp2.next;
         }
-        if(cnt1>cnt2){
+        if(cnt1>cnt2)
+	{
             return 1;
         }
-        else if(cnt1<cnt2){
+        else if(cnt1<cnt2)
+	{
             return -1;
         }
         return 0;
