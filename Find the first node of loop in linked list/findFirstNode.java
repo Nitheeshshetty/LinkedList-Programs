@@ -75,23 +75,8 @@ class GFG
         out.flush();
     }
 }
-// } Driver Code Ends
 
 
-//User function Template for Java
-
-
-/* class Node
-{
-    int data;
-    Node next;
-    
-    Node(int x)
-    {
-        data = x;
-        next = null;
-    }
-}*/
 
 class Solution 
 {
