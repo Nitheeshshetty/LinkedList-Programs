@@ -48,7 +48,6 @@ class GFG
         Node curr = head;
         for(int i=1; i<x; i++)
             curr = curr.next;
-        
         tail.next = curr;
     }
     
@@ -56,7 +55,6 @@ class GFG
         FastReader sc = new FastReader();
         PrintWriter out = new PrintWriter(System.out);
         int t = sc.nextInt();
-        
         while(t--> 0)
         {
             int n = sc.nextInt();
