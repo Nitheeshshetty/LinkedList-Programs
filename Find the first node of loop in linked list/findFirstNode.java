@@ -16,7 +16,8 @@ class Node
 
 class GFG
 {
-    static class FastReader{ 
+    static class FastReader
+    { 
         BufferedReader br; 
         StringTokenizer st; 
         public FastReader(){ 
@@ -33,7 +34,6 @@ class GFG
             try{ str = br.readLine(); } catch (IOException e) { e.printStackTrace(); } 
             return str; 
         } 
-
         Integer nextInt(){
             return Integer.parseInt(next());
         }
