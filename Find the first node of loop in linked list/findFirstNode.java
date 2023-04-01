@@ -58,18 +58,15 @@ class GFG
         while(t--> 0)
         {
             int n = sc.nextInt();
-            
             int num = sc.nextInt();
             Node head = new Node(num);
             Node tail = head;
-            
             for(int i=0; i<n-1; i++)
             {
                 num = sc.nextInt();
                 tail.next = new Node(num);
                 tail = tail.next;
             }
-            
             int pos = sc.nextInt();
             makeLoop(head, tail, pos);
             Solution x = new Solution();
