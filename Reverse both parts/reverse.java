@@ -51,41 +51,23 @@ class GFG {
 
 
 
-/*
-
-Definition for singly Link List Node
-class Node
-{
-    int data;
-    Node next;
-
-    Node(int x){
-        data = x;
-        next = null;
-    }
-}
-
-You can also use the following for printing the link list.
-Node.printList(Node node);
-*/
-
 class Solution 
 {
     public static Node reverse(Node head, int k) 
     {
-		 if(head == null || head.next==null)
-			 return head;
-		 Node curr= head, prevFirst=null;
-		 int count=0;
-		 Node prev= null;
-		 Node next = null;
-		 while(curr!=null) 
-		 { 
-			 next = curr.next;
-			 curr.next = prev;
-			 prev=curr;
-			 curr=next;
-			 count++;
+	if(head == null || head.next==null)
+	   return head;
+	Node curr= head, prevFirst=null;
+	int count=0;
+	Node prev= null;
+	Node next = null;
+	while(curr!=null) 
+	{ 
+	    next = curr.next;
+	    curr.next = prev;
+	    prev=curr;
+	    curr=next;
+	   count++;
 			 if(count==k) 
 			 {
 				 prevFirst = prev;
