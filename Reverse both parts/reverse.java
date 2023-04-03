@@ -37,19 +37,14 @@ class GFG {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t;
         t = Integer.parseInt(br.readLine());
-        while(t-- > 0){
-            
+        while(t-- > 0)
+	{     
             Node head = Node.inputList(br);
-            
-            
             int k;
             k = Integer.parseInt(br.readLine());
-            
             Solution obj = new Solution();
             Node res = obj.reverse(head, k);
-            
             Node.printList(res);
-            
         }
     }
 }
