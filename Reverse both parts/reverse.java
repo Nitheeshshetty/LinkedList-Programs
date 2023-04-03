@@ -69,15 +69,15 @@ class Solution
 	    curr=next;
 	    count++;
 	    if(count==k) 
-			 {
-				 prevFirst = prev;
-				 prev=null;
-			 }
-		 }
-		 if(count<k)
-			 return prev;
-		 head.next = prev;
-		 return prevFirst;
+	    {
+		prevFirst = prev;
+		prev=null;
+	    }
 	}
+	if(count<k)
+	    return prev;
+	head.next = prev;
+	return prevFirst;
+    }
 }
         
