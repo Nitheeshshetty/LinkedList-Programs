@@ -67,8 +67,8 @@ class Solution
 	    curr.next = prev;
 	    prev=curr;
 	    curr=next;
-	   count++;
-			 if(count==k) 
+	    count++;
+	    if(count==k) 
 			 {
 				 prevFirst = prev;
 				 prev=null;
