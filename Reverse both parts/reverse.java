@@ -13,13 +13,11 @@ class Node
 
     public static Node inputList(BufferedReader br) throws IOException
     {
-        int n = Integer.parseInt(br.readLine().trim()); // Length of Linked List
-
+        int n = Integer.parseInt(br.readLine().trim()); 
         String[] s = br.readLine().trim().split(" ");
         Node head = new Node(Integer.parseInt(s[0])), tail = head;
         for(int i = 1; i < s.length; i++)
             tail = tail.next = new Node(Integer.parseInt(s[i]));
-
         return head;
     }
 
