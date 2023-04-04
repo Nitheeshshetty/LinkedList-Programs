@@ -10,14 +10,16 @@ class Node
 
 class GFG
 {
-    public static Node newNode(int data){
+    public static Node newNode(int data)
+    {
         Node temp = new Node();
         temp.data = data;
         temp.next = null;
         return temp;
     }
     
-    public static void makeLoop(Node head, int x){
+    public static void makeLoop(Node head, int x)
+    {
         if (x == 0)
             return;
         Node curr = head;
