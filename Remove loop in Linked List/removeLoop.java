@@ -37,7 +37,8 @@ class GFG
         last.next = curr;
     }
     
-    public static boolean detectLoop(Node head){
+    public static boolean detectLoop(Node head)
+    {
         Node hare = head.next;
         Node tortoise = head;
         while( hare != tortoise )
@@ -49,7 +50,8 @@ class GFG
         return true;
     }
     
-    public static int length(Node head){
+    public static int length(Node head)
+    {
         int ret=0;
         while(head!=null)
         {
