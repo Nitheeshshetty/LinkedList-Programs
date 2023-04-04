@@ -1,6 +1,3 @@
-//{ Driver Code Starts
-// driver code
-
 import java.util.*;
 import java.io.*;
 import java.lang.*;
@@ -60,31 +57,26 @@ class GFG
         return ret;
     }
     
-    public static void main (String[] args){
+    public static void main (String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        
         while(t--> 0)
         {
             int n = sc.nextInt();
-            
             int num = sc.nextInt();
             Node head = newNode(num);
             Node tail = head;
-            
             for(int i=0; i<n-1; i++)
             {
                 num = sc.nextInt();
                 tail.next = newNode(num);
                 tail = tail.next;
             }
-            
             int pos = sc.nextInt();
             makeLoop(head, pos);
-            
             Solution x = new Solution();
             x.removeLoop(head);
-            
             if( detectLoop(head) || length(head)!=n )
                 System.out.println("0");
             else
