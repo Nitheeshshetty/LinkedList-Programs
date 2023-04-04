@@ -89,16 +89,7 @@ class GFG
     }
 }
 
-// } Driver Code Ends
 
-
-/*
-class Node
-{
-    int data;
-    Node next;
-}
-*/
 
 class Solution
 {
