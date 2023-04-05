@@ -36,8 +36,10 @@ class Main
         }
     }
     
-    public static void printList(Node n) {
-        while (n != null) {
+    public static void printList(Node n) 
+    {
+        while (n != null) 
+        {
             System.out.print(n.data + " ");
             n = n.next;
         }
