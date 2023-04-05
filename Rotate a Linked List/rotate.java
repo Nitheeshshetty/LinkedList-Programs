@@ -1,14 +1,17 @@
 import java.util.*;
-class Node {
+class Node 
+{
     int data;
     Node next;
-    Node(int d) {
+    Node(int d) 
+    {
         data = d;
         next = null;
     }
 } 
 
-class Main {
+class Main 
+{
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
