@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Node 
 {
     int data;
@@ -16,22 +17,19 @@ class Main
     {    
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while (t-- > 0) {
+        while (t-- > 0) 
+        {
             int n = sc.nextInt();
-            
             int a = sc.nextInt();
             Node head = new Node(a);
             Node tail = head;
-            
             for (int i=0; i<n-1; i++)
             {
                 a = sc.nextInt();
                 tail.next = new Node(a);
                 tail = tail.next;
             }
-            
             int k = sc.nextInt();
-            
             Solution ob = new Solution();
             head = ob.rotate(head,k);
             printList(head);
