@@ -50,18 +50,7 @@ class Main
 // } Driver Code Ends
 
 
-/* node of linked list:
 
-class Node{
-    int data;
-    Node next;
-    Node(int d){
-        data=d;
-        next=null;
-    }
-}
-
-*/
 
 class Solution{
     //Function to rotate a linked list.
