@@ -47,12 +47,11 @@ class Main
     }
 }
 
-// } Driver Code Ends
 
 
 
-
-class Solution{
+class Solution
+{
     //Function to rotate a linked list.
     public Node rotate(Node head, int k) 
     {
