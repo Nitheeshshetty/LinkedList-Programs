@@ -15,11 +15,10 @@ class Node
 class ReverseInSize
 {
     static Node head;
-    
-    public static void main (String[] args) {
+    public static void main (String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        
         while(t-- > 0)
         {
             int n = sc.nextInt();
@@ -29,11 +28,9 @@ class ReverseInSize
             for(int i = 1; i < n; i++)
             {
                 int a = sc.nextInt();
-                // addToTheLast(new Node(a));
                 tail.next = new Node(a);
                 tail =tail.next;
             }
-            
             int k = sc.nextInt();
             Solution ob = new Solution();
             Node res = ob.reverse(head, k);
