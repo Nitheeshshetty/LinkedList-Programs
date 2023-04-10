@@ -51,12 +51,6 @@ class Driverclass
 
 
 
-// } Driver Code Ends
-
-
-//User function Template for Java
-
-
 class Solution
 {
     //Function to sort a linked list of 0s, 1s and 2s.
