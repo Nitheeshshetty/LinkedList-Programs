@@ -37,8 +37,9 @@ class Driverclass
     
     public static void printList(Node head)
     {
-        if(head == null)
+        if(head == null){
            return;
+	}
         Node temp = head;
         while(temp != null)
         {
