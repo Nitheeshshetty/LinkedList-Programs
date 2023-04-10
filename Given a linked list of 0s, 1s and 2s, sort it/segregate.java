@@ -24,14 +24,14 @@ class Driverclass
             int n = sc.nextInt();
             Node head = new Node(sc.nextInt());
             Node tail = head;
-            while(n-- > 1){
-		        tail.next = new Node(sc.nextInt());
-		        tail = tail.next;
-		    }
-		   
-		      head = new Solution().segregate(head);
-		     printList(head);
-		    System.out.println();
+            while(n-- > 1)
+	    {
+		tail.next = new Node(sc.nextInt());
+		tail = tail.next;
+	    }   
+	    head = new Solution().segregate(head);
+	    printList(head);
+	    System.out.println();
         }
     }
     
