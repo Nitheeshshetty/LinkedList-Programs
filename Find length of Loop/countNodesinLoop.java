@@ -16,13 +16,13 @@ class Node
 
 class GFG
 {
-    public static void makeLoop(Node head, Node tail, int x){
-        if (x == 0) return;
-        
+    public static void makeLoop(Node head, Node tail, int x)
+    {
+        if (x == 0) 
+            return;
         Node curr = head;
         for(int i=1; i<x; i++)
             curr = curr.next;
-        
         tail.next = curr;
     }
     
