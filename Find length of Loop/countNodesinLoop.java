@@ -52,8 +52,6 @@ class GFG
 
 
 
-//Function should return the length of the loop in LL.
-
 class Solution
 {
     //Function to find the length of a loop in the linked list.
